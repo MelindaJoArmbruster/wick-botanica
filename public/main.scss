@@ -1,0 +1,86 @@
+@import 'config';
+@import 'navbar';
+@import 'allproducts';
+@import 'singleproduct';
+@import 'cart';
+@import 'admin';
+@import 'candleflame';
+@import 'responsive';
+
+body {
+  font-family: $body-font;
+}
+
+a {
+  color: $body-color;
+  text-decoration: none;
+}
+
+label {
+  display: block;
+}
+
+form div {
+  margin: 1em;
+  display: inline-block;
+}
+
+.cartIcon {
+  width: 20px;
+}
+
+#add-to-cart {
+  color: $button-text;
+  font-family: $body-font;
+  background-color: $body-color;
+}
+
+td {
+  color: #3a3e3b;
+}
+.submitOrder {
+  &__header {
+    font-size: 20px;
+    border-bottom: 3px solid rgb(213, 213, 213);
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 4px;
+  }
+  &__address-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__address {
+    border: 3px solid rgb(213, 213, 213);
+    padding: 3px;
+    margin: 5px 0 5px 0;
+  }
+  &__button {
+    font-family: $body-font;
+    background-color: $body-color;
+    color: $button-text;
+  }
+}
+
+.awning {
+  display: flex;
+}
+
+.entry-button {
+  font-family: $body-font;
+  background-color: $body-color;
+  color: $button-text;
+}
+.orderHistory_Container {
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+}
+.orderHistory_table {
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  text-align: center;
+  padding: 7px;
+}

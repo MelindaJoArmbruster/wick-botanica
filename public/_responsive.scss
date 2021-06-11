@@ -1,0 +1,51 @@
+@include media-sm {
+  .product-container {
+    padding: 3rem;
+
+    img {
+      width: 55vw;
+    }
+
+    .product-description {
+      padding: 0rem 1rem 0rem 1rem;
+    }
+  }
+}
+
+@include media-md {
+  .products {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@include media-lg {
+  .products {
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@include media-xl {
+  .products {
+    &__items {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .product-container {
+    img {
+      width: 50vw;
+    }
+  }
+}
+
+@include media-xxl {
+  .products {
+    &__items {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
